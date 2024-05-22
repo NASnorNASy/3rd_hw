@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<style>
+    #dash1 {
+        margin: 350px;
+        position: absolute;
+        background-color: rgb(0, 132, 132);
+        width: 60px;
+        height: 5px;
+        animation: mymove 60s infinite;
+        transform-origin: left 2.5px;
+    }
+    #dash2 {
+        margin: 350px;
+        position: absolute;
+        background-color: rgb(0, 132, 132);
+        width: 80px;
+        height: 5px;
+        animation: mymove 30s infinite;
+        transform-origin: left 2.5px;
+    }
+    #circ{
+        margin: 250px;
+        position: absolute;
+        border: solid 5px rgb(0, 132, 132);
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+
+    @keyframes mymove {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<body>
+    <div id="dash1"></div>
+    <div id="dash2"></div>
+    <div id="circ"></div>
+    
+</body>
+
+</html>
